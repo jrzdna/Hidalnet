@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJRVGNJYV2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZJRVGNJYV2');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Hidalnet</title>
+
+    <style>
+        :root {
+            --azul-tecnologico: #0052cc;
+            --azul-oscuro: #0a192f;
+            --gris-fondo: #f4f6f9;
+            --blanco: #ffffff;
+            --texto-oscuro: #333333;
+            --verde-seguridad: #00b4d8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--gris-fondo);
+            color: var(--texto-oscuro);
+            line-height: 1.6;
+        }
+
+        /* ------------------ NAVEGACIÓN ------------------ */
+        header {
+            background-color: var(--azul-oscuro);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: var(--blanco);
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--verde-seguridad);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--verde-seguridad);
+        }
+
+        /* ------------------ SECCIÓN BANNER (HERO MINI) ------------------ */
+        .banner-interno {
+            background: linear-gradient(135deg, rgba(10,25,47,0.95) 0%, rgba(0,82,204,0.85) 100%);
+            color: var(--blanco);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .banner-interno h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .banner-interno p {
+            color: #ccd6f6;
+            font-size: 1.1rem;
+        }
+
+        /* ------------------ HISTORIA / QUIÉNES SOMOS ------------------ */
+        .quienes-somos {
+            padding: 5rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .contenido-nosotros {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contenido-nosotros h3 {
+            color: var(--azul-oscuro);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contenido-nosotros p {
+            margin-bottom: 1rem;
+            color: #555;
+            text-align: justify;
+        }
+
+        .imagen-nosotros {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .imagen-nosotros img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ------------------ MISIÓN Y VISIÓN ------------------ */
+        .mision-vision {
+            background-color: var(--blanco);
+            padding: 5rem 5%;
+        }
+
+        .container-mv {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .box-mv {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--gris-fondo);
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 4px solid var(--azul-tecnologico);
+        }
+
+        .box-mv.seguridad {
+            border-top: 4px solid var(--verde-seguridad);
+        }
+
+        .box-mv h3 {
+            color: var(--azul-oscuro);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .box-mv p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* ------------------ FOOTER ------------------ */
+        footer {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 3px solid var(--verde-seguridad);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Hidal<span>net</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html" class="active">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner-interno">
+        <h2>Conoce a Hidalnet</h2>
+        <p>Trabajamos diariamente para mantenerte conectado y protegido.</p>
+    </section>
+
+    <section class="quienes-somos">
+        <div class="contenido-nosotros">
+            <h3>¿Quiénes Somos?</h3>
+            <p>Somos una empresa local dedicada a ofrecer soluciones integrales en telecomunicaciones y sistemas de seguridad electrónica. Nacimos con el firme propósito de resolver los problemas de conectividad en nuestra región, llevando internet de banda ancha estable donde otros no llegan.</p>
+            <p>Además, entendemos que la tranquilidad de tu familia y tu patrimonio es lo más importante. Por ello, especializamos nuestro equipo técnico en el diseño, instalación y mantenimiento de circuitos cerrados de televisión (CCTV) y cámaras de seguridad de última generación.</p>
+        </div>
+        <div class="imagen-nosotros">
+            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9aae9d?auto=format&fit=crop&w=600&q=80" alt="Equipo de telecomunicaciones Hidalnet">
+        </div>
+    </section>
+
+    <section class="mision-vision">
+        <div class="container-mv">
+            <div class="box-mv">
+                <h3>Nuestra Misión</h3>
+                <p>Proveer servicios de internet simétrico de alta velocidad y sistemas avanzados de videovigilancia con la máxima eficiencia técnica. Buscamos garantizar el desarrollo digital de nuestra comunidad y proveer herramientas tecnológicas accesibles que brinden paz y protección a cada hogar y comercio local.</p>
+            </div>
+            <div class="box-mv seguridad">
+                <h3>Nuestra Visión</h3>
+                <p>Consolidarnos como el proveedor líder de servicios tecnológicos e infraestructura de seguridad en la región para el año 2028. Queremos ser reconocidos por la excelencia en nuestra atención al cliente, la estabilidad ininterrumpida de nuestras redes de datos y la innovación constante en monitoreo preventivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hidalnet - Conectividad y Seguridad Local. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
